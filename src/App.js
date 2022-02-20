@@ -130,7 +130,7 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, mintAmount)
+      .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -277,6 +277,12 @@ function App() {
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   *Excluding gas fees.
+                </s.TextDescription>
+                <s.TextDescription
+                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                >
+                   Attention : In order to success the minting process, 
+                   we suggested You to raise the Gas-Fee to MEDIUM or HIGH.
                 </s.TextDescription>
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
