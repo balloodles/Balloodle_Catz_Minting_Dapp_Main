@@ -102,22 +102,22 @@ function App() {
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "",
-    SCAN_LINK: "",
-    NETWORK: {
-      NAME: "",
-      SYMBOL: "",
-      ID: 0,
+    "CONTRACT_ADDRESS": "0xf6A695B7bED9FA655e9325514c0E213c1436cF90",
+    "SCAN_LINK": "https://polygonscan.com/token/0xf6A695B7bED9FA655e9325514c0E213c1436cF90",
+    "NETWORK": {
+      "NAME": "Polygon",
+      "SYMBOL": "Matic",
+      "ID": 137
     },
-    NFT_NAME: "",
-    SYMBOL: "",
-    MAX_SUPPLY: 1,
-    WEI_COST: 0,
-    DISPLAY_COST: 0,
-    GAS_LIMIT: 0,
-    MARKETPLACE: "",
-    MARKETPLACE_LINK: "",
-    SHOW_BACKGROUND: false,
+    "NFT_NAME": "Balloodle Catz",
+    "SYMBOL": "BCZ",
+    "MAX_SUPPLY": 5555,
+    "WEI_COST": 500000000000000000,
+    "DISPLAY_COST": 0.5,
+    "GAS_LIMIT": 1000000,
+    "MARKETPLACE": "Opensea.io",
+    "MARKETPLACE_LINK": "https://opensea.io/collection/balloodle-catz",
+    "SHOW_BACKGROUND": true
   });
 
   const claimNFTs = () => {
